@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+}
+
+canvas{
+	background: #c9e5ff; 
+}
+
+#gamePlay {
+     background: #c9e5ff; 
+}
+#game {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 800px;
+	height: 750px;
+	background-color: #c9e5ff;
+	font-size: 40px;
+}
+
+#game .screen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+}
+
+#game .screen.active{
+    display: block; 
+}
+
+#main {
+	padding-top: 1em;
+	cursor: pointer;
+	font-size: 0.75em;
+}
+
+ul.menu {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.menu li {
+	margin: 0.8em 0;
+}
+
+ul.menu li button {
+	font-family: Arial, sans-serif;
+	font-size: 0.6em;
+	color: black;
+	width: 10em;
+	height: 1.5em;
+	background: grey;
+	border: 0.1em solid rgb(255, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em blue;
+}
+
+ul.menu li button:hover {
+	background: #2E2EFE;
+}
+
+ul.menu li button:active {
+	color: #CECEF6;
+	background: rgb(0, 0, 0);
+}
+
+#game div h1 {
+	font-size: 1em;
+	text-align: center;
+}
+
+#highScores ol {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

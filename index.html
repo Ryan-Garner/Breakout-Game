@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8"/>
+    <title>Breakout Game</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles/breakoutStyle.css">
+    <script src = "scripts/breakout.js"></script>
+    <script src = "scripts/Ball.js"></script>
+    <script src = "scripts/Bricks.js"></script>
+    <script src = "scripts/Text.js"></script>
+    <script src = "scripts/Interface.js"></script>
+    <script src = "scripts/ParticleSystem.js"></script>
+    <script src = "scripts/random.js"></script>
+    <script src = "scripts/record.js"></script>
+</head>
+<body onload = "initialize()">
+    <div id = "game">
+        <div id = "gamePlay" class = "screen">
+            <ul class = "menu">
+				<li><button id = "id-game-back">Back</button></li>
+			</ul>
+            <canvas id = "myCanvas" width="800" height="750"></canvas>
+        </div>
+        <div id = "main" class = "screen">
+                <ul class = "menu">
+                    <li><button id = "id-new-game">New&nbsp;Game</button></li>
+                    <li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+                    <li><button id = "id-credits">Credits</button></li>
+			    </ul>
+        </div>
+        <div id = "credits" class = "screen">
+            <h1>Credits</h1>
+			<ul>
+				<li>Created by Ryan Garner</li>
+                <li>Thanks to Dean Mathias for teaching me how to do this</li>
+			</ul>
+            <ul class = "menu">
+				<li><button id = "id-credits-back">Back</button></li>
+			</ul>
+        </div>
+        <div id = "highScores" class = "screen">
+            <h1>High Scores</h1>
+			<ol>
+				<li id = "one">100</li>
+				<li id = "two">80</li>
+				<li id = "three">60</li>
+				<li id = "four">40</li>
+                <li id = "five">0</li>
+			</ol>
+            <ul class = "menu">
+				<li><button id = "id-highScores-back">Back</button></li>
+                <li><button id = "id-reset-scores">Reset Scores</button></li>
+			</ul>
+        </div>
+    </div>
+    
+</body>
+</html>
